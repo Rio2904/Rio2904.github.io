@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="" content="">
+    <title>Portofolio TB</title>
+   <style type="text/css" media="all">
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, caption,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+
+/*Style*/
+
+body {
+  font: 16px/20px arial, sans-serif;
+  height: 2000px;
+}
+.container {
+  width: 960px;
+  background-color: #eaeaea;
+  margin: auto;
+  border: 3px solid black; 
+}
+
+.header {
+  padding: 20px;
+  position: fixed;
+  background-color: white;
+  border-bottom: 3px solid salmon;
+  width: 100%;
+  top: 0%;
+  left: 0%;
+  opacity: 0.7;
+  z-index: 99;
+  height: 50px;
+}
+.header .judul {
+  font-size: 40px;
+  font-weight: bold;
+  float: left;
+  margin-top: 15px;
+  font-family: cursive;
+}
+.header ul {
+  position: absolute;
+  right: 7%;
+  z-index: -2;
+  top: 25%;
+}
+.header li {
+  display: inline-block;
+  box-sizing: border-box;
+  position: relative;
+ padding: 2px 10px;
+ margin: 4px 2px;
+  
+ }
+ 
+.header a {
+  text-decoration: none;
+  color: red;
+  padding: 13px 13px;
+  font-size: 25px;
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  text-transform: uppercase;
+  transition: 1s;
+  background: rgba(225,225,225,0.5);
+  border-radius: 10px;
+  box-shadow: -2px -2px 4px black;
+}
+.header a:hover {
+  transform: scale(0.7);
+}
+.header a span {
+        position: absolute;
+        display: block;
+}
+.header a span:nth-child(1) {
+        top: 0;
+        width: 100%;
+        left: -100%;
+        height: 3px;
+        background: blue;
+  
+}
+.header a:hover span:nth-child(1) {
+        left: 100%;
+        transition: 1s;
+        box-shadow: 0 0 5px red, 0 0 10px red;
+  
+}
+    .header  a span:nth-child(2) {
+        bottom: 0;
+        width: 100%;
+        right: -100%;
+        height: 2px;
+        background: red;
+      
+}
+.header a:hover span:nth-child(2) {
+        right: 100%;
+        transition: 1s;
+        box-shadow: 0 0 5px red, 0 0 10px red;
+}
+
+.gmbr {
+  background-image: url('https://i.ibb.co/R4D1njZ/TB-LOGO.jpg');
+  height: 460px;
+  background-size: cover;
+  background-position: 0 -80px;
+  border-top: 3px solid red;
+  
+  margin-bottom: 20px;
+  margin-top: 90px;
+  
+  filter: blur(7px) drop-shadow(0 5px 0 black);
+}
+.bg {
+  position: relative;
+}
+.bg .p {
+  color: black;
+  background-color: rgba(236, 223, 223, .3);
+  position: absolute;
+  width: 300px;
+  height: 100px;
+  text-align: center;
+  bottom: 40px;
+  left: 10px;
+  box-shadow: -5px 5px 5px white;
+  border-radius: 10px;
+
+}
+.bg .p h1 {
+  line-height: 100px;
+  font-size: 35px;
+  color: white;
+  font-weight: bold;
+  text-shadow: -2px 2px 2px black;
+}
+.conten {
+  padding: 20px;
+}
+
+.conten h2{
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 9px;
+}
+
+.penulis {
+  font-size: 12px;
+}
+
+
+.conten .penulis a {
+  color: red;
+  text-decoration: none;
+}
+.tabel-1 caption{
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+
+.tabel-1 .t-main {
+  margin: auto;
+  text-align: center;
+}
+
+
+.tabel-1 tr, td {
+  padding: 20px;
+  border: 3px solid black;
+}
+
+.tabel-1 lu li {
+  text-align: left;
+  display: inline-block;
+  
+}
+.tabel-1 .wa1, .fb1, .wa2, .fb2, .wa3, .fb3 {
+  width: 30px;
+  height: 30px;
+  
+}
+.sejarah {
+  float: left;
+  margin-top: 20px;
+  width: 600px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.anu {
+  clear: both;
+}
+
+
+.sidebar {
+  width: 300px;
+  float: right;
+  margin-top: 20px;
+  padding: 30px
+  box-sizing: border-box;
+  
+}
+
+.sidebar h1 {
+  font: 22px bold arial;
+  
+}
+.sidebar img {
+  width: 70px;
+  height: 70px;
+  float: left;
+  padding-right: 12px;
+  background-image: ;
+  background-color:
+}
+.sidebar p {
+  font: 12/18px arial
+
+}
+.sidebar .foto {
+  width: 70px;
+  height: 70px;
+  background-color: green;
+  background-image: url('https://i.ibb.co/R4D1njZ/TB-LOGO.jpg');
+  background-size: cover;
+  border-radius: 50%;
+}
+.footer {
+  background-color: #333;
+  padding: 12px;
+  position: fixed;
+  width: 100%;
+  bottom: 0%;
+  left: 0%;
+}
+
+.footer p {
+  color: #eaeaea;
+  font-family: arial;
+  font-size: 14px;
+  text-align: center;
+}
+
+/*! Important*/
+/*credits = Rio Fernando*/
+   </style>
+  </head>
+  <body>
+
+    <div class="container">
+       
+       <div class="header">
+          <h1 class="judul">TRIO BAN</h1>
+          <ul>
+            <li><a href="#"><span></span><span></span>home</a>
+            
+            </li>
+            <li><a href="#">Kontak<span></span><span></span></a></li>
+            <li><a href="form.html">Login<span></span><span></span></a></li>
+           </ul>
+       </div>
+       
+       
+       <div class="bg">
+         <div class="gmbr" alt="Tb logo"></div>
+         <div class="p">
+           <h1>Trio Ban</h1>
+         </div>
+       </div>
+       <div class="conten">
+         <h2>Sejarah</h2>
+         <p class="penulis">Dibuat oleh <a href="https://chat.whatsapp.com/HAWLUEgMQfBLjfPvchG8Ar">TB Groub</a>. September 2021</p>
+       </div>
+      
+       
+       <div class="tabel-1">
+          <table border="3" class="t-main">
+            <caption> Anggota TB Groub </caption>
+            <tr>
+              <th>Anggota</th>
+              <th>Jabatan</th>
+              <th>Selogan</th>
+              <th>Hubungi</th>
+            </tr>
+            <tr>
+              <td>Rio Surya Fernando</td>
+              <td>Pendiri</td>
+              <td>Jangan tanya ulah siapa</td>
+              <td>
+               <lu>
+                <li><a href="Https://wa.me/+6283183628845"><img class="wa1" src="https://liupurnomo.github.io/resume/icons/WhatsApp.png" alt=""></a></li>
+                <li><a href="#"><img class="fb1" src="https://liupurnomo.github.io/resume/icons/Facebook.png" alt=""></a></li>
+               </lu>
+              </td>
+            </tr>
+            <tr>
+              <td>Bintang Verdiano Indrawan</td>
+              <td>Pendiri</td>
+              <td>Just Relax</td>
+              <td>
+               <lu>
+                <li><a href="Https://wa.me/+62 812-6694-7269"><img class="wa2" src="https://liupurnomo.github.io/resume/icons/WhatsApp.png" alt=""></a></li>
+                <li><a href="#"><img class="fb2" src="https://liupurnomo.github.io/resume/icons/Facebook.png" alt=""></a></li>
+               </lu>
+              </td>
+            </tr>
+            <tr>
+              <td>Syaiful Amri</td>
+              <td>Pendiri</td>
+              <td>Tidak ada</td>
+              <td>
+               <lu>
+                <li><a href="Https://wa.me/+62 821-6932-9903"><img class="wa3" src="https://liupurnomo.github.io/resume/icons/WhatsApp.png" alt=""></a></li>
+                <li><a href="#"><img class="fb3" src="https://liupurnomo.github.io/resume/icons/Facebook.png" alt=""></a></li>
+               </lu>
+              </td>
+            </tr>
+            
+          </table>
+       </div>
+       
+       
+  
+      <div class="asal">
+         <div class="sejarah">
+         
+            <p>TB (Trio Ban), adalah sekelompok bocah SMP gendeng dan geng paling terkenal di masanya. TB dibentuk sekitar bulan 11 Tahun 2018 dari sebuah keisengan. pada waktu itu sedang ramai-ramai nya game FREE FIRE dimainkan, kami pun membentuk guild/clan di dalam game FF tersebut dengan nama guild "Trio Ban". Guild kami semakin lama semakin terkenal dan disegani di kelas kami (8B), bahkan guru pun tahu.
+            </p>
+          </div>
+      </div>
+          
+           
+       <div class="sidebar">
+           <h1>PROFIL PENULIS</h1>
+          <div class="foto"></div>
+          
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, ratione quaerat temporibus totam obcaecati veniam suscipit nemo, fugit iusto in dolores nobis repudiandae praesentium. Ullam laborum laboriosam architecto nulla blanditiis.
+           </p>
+          
+       </div>
+           <div class="anu"></div>
+       
+       <div class="footer">
+         <p>copyright 2021 TB Grub</p>
+       </div>
+    
+    </div> 
+        
+  </body>
+</html>
